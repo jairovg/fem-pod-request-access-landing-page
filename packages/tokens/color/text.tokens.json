@@ -1,0 +1,18 @@
+{
+  "color": {
+    "text": {
+      "primary": {
+        "value": "{color.primary.blue.lighter}"
+      },
+      "secondary": {
+        "value": "{color.neutral.value}"
+      },
+      "emphasis": {
+        "value": "{color.primary.green.value}"
+      },
+      "error": {
+        "value": "{color.accent.red.value}"
+      }
+    }
+  }
+}

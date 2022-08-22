@@ -1,0 +1,9 @@
+{
+  "color": {
+    "icon": {
+      "default": {
+        "value": "{color.primary.blue.light.value}"
+      }
+    }
+  }
+}

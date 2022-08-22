@@ -1,0 +1,31 @@
+{
+  "color": {
+    "text": {
+      "button": {
+        "rest": {
+          "value": "{color.primary.blue.darker.value}"
+        },
+        "active": {
+          "value": "{color.primary.blue.darker.value}"
+        },
+        "focus": {
+          "value": "{color.primary.blue.darker.value}"
+        }
+      }
+    },
+    "background": {
+      "button": {
+        "rest": {
+          "value": "{color.primary.green.value}"
+        }
+      }
+    },
+    "border": {
+      "button": {
+        "focus": {
+          "value": "{color.neutral.value}"
+        }
+      }
+    }
+  }
+}

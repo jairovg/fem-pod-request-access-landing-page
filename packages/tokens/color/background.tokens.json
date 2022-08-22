@@ -1,0 +1,9 @@
+{
+  "color": {
+    "background": {
+      "primary": {
+        "value": "{color.primary.blue.darker}"
+      }
+    }
+  }
+}
