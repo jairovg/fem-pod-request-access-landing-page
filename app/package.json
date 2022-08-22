@@ -8,5 +8,11 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@fem-pra/tokens": "^1.0.0"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  }
 }
