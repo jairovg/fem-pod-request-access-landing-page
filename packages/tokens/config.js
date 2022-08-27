@@ -3,7 +3,7 @@ const isBaseColor  = (token) => isColor(token)
   && token.filePath.includes('base.tokens.json');
 
 module.exports = {
-  source: ['**/*.tokens.json'],
+  source: ['**/*.json'],
   platforms: {
     css: {
       transformGroup: 'css',
