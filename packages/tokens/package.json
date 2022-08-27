@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "style-dictionary build"
+    "build": "node build.js"
   },
   "keywords": [],
   "author": "",
