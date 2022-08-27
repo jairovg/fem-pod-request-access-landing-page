@@ -2,16 +2,16 @@
   "color": {
     "text": {
       "primary": {
-        "value": "{color.primary.blue.lighter}"
+        "value": "{config.color.primary.blue.lighter}"
       },
       "secondary": {
-        "value": "{color.neutral.value}"
+        "value": "{config.color.neutral.value}"
       },
       "emphasis": {
-        "value": "{color.primary.green.value}"
+        "value": "{config.color.primary.green.value}"
       },
       "error": {
-        "value": "{color.accent.red.value}"
+        "value": "{config.color.accent.red.value}"
       }
     }
   }

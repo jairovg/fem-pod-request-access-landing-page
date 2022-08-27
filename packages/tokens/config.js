@@ -1,6 +1,7 @@
-const isColor = (token) => token.attributes.category === 'color';
-const isBaseColor  = (token) => isColor(token)
-  && token.filePath.includes('base.tokens.json');
+const isConfig = (token) => token.attributes.category === 'config';
+const isColor = (token) => token.attributes.category === 'color'
+  || token.attributes.type === 'color';
+const isBaseColor  = (token) => isConfig(token) && isColor(token);
 
 module.exports = {
   source: ['**/*.json'],
@@ -13,7 +14,7 @@ module.exports = {
         {
           destination: '_colors.css',
           format: 'css/variables',
-          filter: (token) => !isBaseColor(token),
+          filter: (token) => isColor(token) && !isBaseColor(token),
         },
       ],
     },
@@ -25,7 +26,7 @@ module.exports = {
         {
           destination: '_tokens.scss',
           format: 'scss/variables',
-          filter: (token) => !isColor(token),
+          filter: (token) => !isConfig(token) && !isColor(token),
         },
       ],
     },

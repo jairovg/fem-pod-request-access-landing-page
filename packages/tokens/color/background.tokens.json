@@ -2,7 +2,7 @@
   "color": {
     "background": {
       "primary": {
-        "value": "{color.primary.blue.darker}"
+        "value": "{config.color.primary.blue.darker}"
       }
     }
   }

@@ -2,7 +2,7 @@
   "color": {
     "icon": {
       "default": {
-        "value": "{color.primary.blue.light.value}"
+        "value": "{config.color.primary.blue.light.value}"
       }
     }
   }

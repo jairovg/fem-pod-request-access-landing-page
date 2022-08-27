@@ -3,30 +3,30 @@
     "text": {
       "input": {
         "default": {
-          "value": "{color.neutral.value}80"
+          "value": "{config.color.neutral.value}80"
         },
         "active": {
-          "value": "{color.neutral.value}"
+          "value": "{config.color.neutral.value}"
         },
         "error": {
-          "value": "{color.accent.red.value}"
+          "value": "{config.color.accent.red.value}"
         }
       }
     },
     "background": {
       "input": {
         "default": {
-          "value": "{color.primary.blue.dark.value}"
+          "value": "{config.color.primary.blue.dark.value}"
         }
       }
     },
     "border": {
       "input": {
         "default": {
-          "value": "{color.primary.blue.dark.value}"
+          "value": "{config.color.primary.blue.dark.value}"
         },
         "focus": {
-          "value": "{color.neutral.value}"
+          "value": "{config.color.neutral.value}"
         }
       }
     }
