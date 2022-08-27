@@ -1,0 +1,37 @@
+{
+  "config": {
+    "font": {
+      "family": {
+        "sans": {
+          "value": "'Chivo', sans-serif"
+        }
+      },
+      "style": {
+        "normal": {
+          "value": "normal"
+        }
+      },
+      "weight": {
+        "normal": {
+          "value": "400"
+        }
+      },
+      "height": {
+        "400": {
+          "value": "2.8rem"
+        },
+        "900": {
+          "value": "6.2rem"
+        }
+      },
+      "size": {
+        "400": {
+          "value": "1.8rem"
+        },
+        "900": {
+          "value": "5.2rem"
+        }
+      }
+    }
+  }
+}

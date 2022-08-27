@@ -28,6 +28,10 @@ module.exports = {
           format: 'scss/variables',
           filter: (token) => !isConfig(token) && !isColor(token),
         },
+        {
+          destination: '_mixins.scss',
+          format: 'scss/mixin',
+        },
       ],
     },
   },
