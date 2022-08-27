@@ -18,8 +18,7 @@ module.exports = {
         .filter((p) => m === mixinName(p))
         .map((p) => `${p.property}: ${p.value};`);
 
-      return `
-@mixin ${m}() {
+      return `@mixin ${m}() {
   ${properties.join('\n  ')}
 }
 

@@ -1,0 +1,35 @@
+{
+  "text": {
+    "heading": {
+      "sans": {
+        "900": {
+          "family": {
+            "property": "font-family",
+            "value": "{config.font.family.sans.value}",
+            "mixin": true
+          },
+          "style": {
+            "property": "font-style",
+            "value": "{config.font.style.normal.value}",
+            "mixin": true
+          },
+          "weight": {
+            "property": "font-weight",
+            "value": "{config.font.weight.normal.value}",
+            "mixin": true
+          },
+          "height": {
+            "property": "line-height",
+            "value": "{config.font.height.900.value}",
+            "mixin": true
+          },
+          "size": {
+            "property": "font-size",
+            "value": "{config.font.size.900.value}",
+            "mixin": true
+          }
+        }
+      }
+    }
+  }
+}
