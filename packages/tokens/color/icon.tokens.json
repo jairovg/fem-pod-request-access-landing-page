@@ -1,8 +1,11 @@
 {
   "color": {
     "icon": {
-      "default": {
+      "primary": {
         "value": "{config.color.primary.blue.light.value}"
+      },
+      "secondary": {
+        "value": "{config.color.neutral.value}"
       }
     }
   }

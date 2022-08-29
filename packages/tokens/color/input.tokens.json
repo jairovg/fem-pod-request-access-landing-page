@@ -3,10 +3,10 @@
     "text": {
       "input": {
         "default": {
-          "value": "{config.color.neutral.value}80"
-        },
-        "active": {
           "value": "{config.color.neutral.value}"
+        },
+        "placeholder": {
+          "value": "{config.color.neutral.value}80"
         },
         "error": {
           "value": "{config.color.accent.red.value}"
