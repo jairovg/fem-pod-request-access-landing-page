@@ -13,11 +13,32 @@
   <title>Pod request access landing page | Frontend Mentor</title>
 </head>
 <body>
-  Publish your podcasts everywhere.
 
   Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify,
   Apple Podcasts, Google Podcasts, Pocket Casts and more!
 
   Request access
+  <header class="header">
+    <img
+      class="header__logo"
+      src="./assets/icons/logo.svg"
+      alt="pod logo"
+    >
+    <picture class="header__picture">
+      <source
+        srcset="./assets/images/desktop/image-host.jpg"
+        media="(min-width: 1440px)"
+      >
+      <source
+        srcset="./assets/images/tablet/image-host.jpg"
+        media="(min-width: 768px)"
+      >
+      <img
+        class="header__image"
+        src="./assets/images/mobile/image-host.jpg"
+        alt="musician singing at the studio"
+      >
+    </picture>
+  </header>
 </body>
 </html>

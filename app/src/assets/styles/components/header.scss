@@ -1,0 +1,33 @@
+.header {
+  margin: 62px 0 57px;
+
+  @media screen and (min-width: 768px) {
+    margin: 50px 0 152px 39px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin: 102px 0 103px 165px;
+  }
+
+  &__picture {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: .1;
+    z-index: -1;
+
+    @media screen and (min-width: 768px) {
+      left: 36.068%;
+      opacity: 1;
+    }
+    @media screen and (min-width: 1440px) {
+      margin-top: 28px;
+      left: 38.333%;
+      top: auto;
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+}
