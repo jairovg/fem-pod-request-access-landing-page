@@ -6,4 +6,16 @@ module.exports = defineConfig({
   build: {
     outDir: '../dist',
   },
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, 'src'),
+    },
+  },
+  css: {
+    postcss: {
+      plugins: [
+        require('autoprefixer'),
+      ],
+    },
+  },
 });

@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "prebuild": "rimraf dist",
     "preview": "vite preview"
   },
   "keywords": [],
@@ -15,6 +16,7 @@
     "@fem-pra/tokens": "^1.0.0"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.8",
     "rimraf": "^3.0.2",
     "sass": "^1.54.5",
     "vite": "^3.0.9"
