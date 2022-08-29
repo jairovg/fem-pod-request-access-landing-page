@@ -8,7 +8,7 @@
         "value": "{config.color.neutral.value}"
       },
       "emphasis": {
-        "value": "{config.color.primary.green.value}"
+        "value": "{config.color.primary.green.light.value}"
       },
       "error": {
         "value": "{config.color.accent.red.value}"

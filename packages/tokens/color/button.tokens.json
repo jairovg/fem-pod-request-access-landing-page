@@ -16,14 +16,17 @@
     "background": {
       "button": {
         "rest": {
-          "value": "{config.color.primary.green.value}"
+          "value": "{config.color.primary.green.light.value}"
+        },
+        "hover": {
+          "value": "{config.color.primary.green.lighter.value}"
         }
       }
     },
     "border": {
       "button": {
         "focus": {
-          "value": "{config.color.neutral.value}"
+          "value": "{config.color.primary.green.light.value}"
         }
       }
     }

@@ -17,7 +17,12 @@
           }
         },
         "green": {
-          "value": "#54E6AF"
+          "lighter": {
+            "value": "#B3FFE2"
+          },
+          "light": {
+            "value": "#54E6AF"
+          }
         }
       },
       "accent": {
