@@ -1,0 +1,51 @@
+@use "@fem-pra/tokens/dist/scss/mixins" as *;
+@use "@fem-pra/tokens/dist/scss/tokens" as *;
+
+.main {
+  padding: 0 24px;
+
+  @media screen and (min-width: 768px) {
+    background-color: var(--fem-color-background-primary);
+    margin-left: 39px;
+    padding: 93px 32px 0 0;
+    width: 82.682%;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-left: 165px;
+    padding: 88px 58px 0 0;
+    width: 50.208%;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    text-transform: uppercase;
+
+    @extend %fem-text-heading-sans-500;
+
+    @media screen and (min-width: 768px) {
+      font-size: $fem-text-heading-sans-600-size;
+      line-height: $fem-text-heading-sans-600-height;
+      margin-bottom: 31px;
+    }
+    @media screen and (min-width: 1440px) {
+      font-size: $fem-text-heading-sans-700-size;
+      line-height: $fem-text-heading-sans-700-height;
+      margin-bottom: 24px;
+    }
+
+    &--accent {
+      color: var(--fem-color-text-emphasis);
+    }
+  }
+
+  &__body {
+    margin-bottom: 33px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 40px;
+      width: 73.798%
+    }
+    @media screen and (min-width: 1440px) {
+      width: 66.917%
+    }
+  }
