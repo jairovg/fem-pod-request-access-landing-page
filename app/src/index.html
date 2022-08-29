@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/styles/index.scss" />
 
+  <script defer="defer" src="./index.js"></script>
+
   <title>Pod request access landing page | Frontend Mentor</title>
 </head>
 <body>
@@ -52,11 +54,11 @@
           id="email"
           type="email"
           name="email"
+          required="required"
           class="request-form__input"
           placeholder="Email address"
         />
-        <span class="request-form__helper-text request-form__helper-text--error request-form__helper-text--visible">
-          Oops! Please check your email
+        <span class="request-form__helper-text request-form__helper-text--error">
         </span>
         <button
           type="submit"
