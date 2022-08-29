@@ -13,8 +13,6 @@
   <title>Pod request access landing page | Frontend Mentor</title>
 </head>
 <body>
-
-  Request access
   <header class="header">
     <img
       class="header__logo"
@@ -45,6 +43,63 @@
       Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify,
       Apple Podcasts, Google Podcasts, Pocket Casts and more!
     </p>
+    <section class="main__footer">
+      <form
+        novalidate
+        class="request-form"
+      >
+        <input
+          id="email"
+          type="email"
+          name="email"
+          class="request-form__input"
+          placeholder="Email address"
+        />
+        <span class="request-form__helper-text request-form__helper-text--error request-form__helper-text--visible">
+          Oops! Please check your email
+        </span>
+        <button
+          type="submit"
+          class="request-form__button"
+        >
+          Request access
+        </button>
+      </form>
+      <ul class="podcasts">
+        <li class="podcasts__item">
+          <a
+            class="podcasts__link icon icon--spotify"
+            href="#"
+          >
+            Spotify
+          </a>
+        </li>
+        <li class="podcasts__item">
+          <a
+            class="podcasts__link icon icon--apple"
+            href="#"
+          >
+            Apple Podcast
+          </a>
+        </li>
+        <li class="podcasts__item">
+          <a
+            class="podcasts__link icon icon--google"
+            href="#"
+          >
+            Google Podcast
+          </a>
+        </li>
+        <li class="podcasts__item">
+          <a
+            class="podcasts__link icon icon--pocket"
+            href="#"
+          >
+            Pocket Cast
+          </a>
+        </li>
+      </ul>
+    </section>
   </main>
 </body>
 </html>

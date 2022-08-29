@@ -1,0 +1,32 @@
+.icon {
+  display: grid;
+  height: 17px;
+
+  @media screen and (min-width: 768px) {
+    height: 29px;
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    height: inherit;
+    grid-area: 1/-1;
+    mask: no-repeat center/contain;
+  }
+
+  &--spotify::after {
+    mask-image: url("@/assets/icons/spotify.svg");
+  }
+
+  &--apple::after {
+    mask-image: url("@/assets/icons/apple-podcast.svg");
+  }
+
+  &--google::after {
+    mask-image: url("@/assets/icons/google-podcasts.svg");
+  }
+
+  &--pocket::after {
+    mask-image: url("@/assets/icons/pocket-casts.svg");
+  }
+}
