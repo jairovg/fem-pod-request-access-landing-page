@@ -5,15 +5,32 @@
   padding: 0 24px;
 
   @media screen and (min-width: 768px) {
+    position: relative;
     background-color: var(--fem-color-background-primary);
     margin-left: 39px;
     padding: 93px 32px 32px 0;
     width: 82.682%;
+
+    &::after {
+      position: absolute;
+      background-image: url("@/assets/icons/bg-pattern-dots.svg");
+      content: "";
+      height: 104px;
+      width: 232px;
+      bottom: -257px;
+    }
   }
   @media screen and (min-width: 1440px) {
+    position: static;
     margin-left: 165px;
     padding: 88px 58px 32px 0;
     width: 50.208%;
+
+    &::after {
+      bottom: 0;
+      right: 0;
+      top: 718px;
+    }
   }
 
   &__title {
