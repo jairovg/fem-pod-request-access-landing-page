@@ -18,48 +18,48 @@
       },
       "height": {
         "100": {
-          "value": "1.428rem"
+          "value": "14.28"
         },
         "200": {
-          "value": "2.8rem"
+          "value": "28"
         },
         "300": {
-          "value": "2.5rem"
+          "value": "25"
         },
         "400": {
-          "value": "2.8rem"
+          "value": "28"
         },
         "500": {
-          "value": "3.8rem"
+          "value": "38"
         },
         "600": {
-          "value": "5.6rem"
+          "value": "56"
         },
         "700": {
-          "value": "6.2rem"
+          "value": "62"
         }
       },
       "size": {
         "100": {
-          "value": "1.2rem"
+          "value": "12"
         },
         "200": {
-          "value": "1.4rem"
+          "value": "14"
         },
         "300": {
-          "value": "1.5rem"
+          "value": "15"
         },
         "400": {
-          "value": "1.8rem"
+          "value": "18"
         },
         "500": {
-          "value": "2.7rem"
+          "value": "27"
         },
         "600": {
-          "value": "4.8rem"
+          "value": "48"
         },
         "700": {
-          "value": "5.2rem"
+          "value": "52"
         }
       }
     }

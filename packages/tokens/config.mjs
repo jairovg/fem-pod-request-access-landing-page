@@ -1,10 +1,10 @@
 const isConfig = (token) => token.attributes.category === 'config';
-const isColor = (token) => token.attributes.category === 'color'
-  || token.attributes.type === 'color';
-const isBaseColor  = (token) => isConfig(token) && isColor(token);
+const isColor = (token) =>
+  token.attributes.category === 'color' || token.attributes.type === 'color';
+const isBaseColor = (token) => isConfig(token) && isColor(token);
 
-module.exports = {
-  source: ['**/*.json'],
+export default {
+  source: ['dictionaries/**/*.json'],
   platforms: {
     css: {
       transformGroup: 'css',
@@ -35,4 +35,4 @@ module.exports = {
       ],
     },
   },
-}
+};
