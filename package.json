@@ -6,6 +6,6 @@
     "app"
   ],
   "devDependencies": {
-    "lerna": "^5.4.3"
+    "lerna": "^7.0.1"
   }
 }
