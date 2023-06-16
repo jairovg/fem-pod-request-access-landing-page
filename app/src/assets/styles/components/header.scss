@@ -1,13 +1,13 @@
 @use "@fem-pra/tokens/dist/scss/tokens" as *;
 
 .header {
-  margin: 62px 0 57px;
+  margin: $fem-size-offset-2100 0 $fem-size-offset-1900;
 
   @media screen and (min-width: $fem-breakpoint-sm) {
-    margin: 50px 0 152px 39px;
+    margin: $fem-size-offset-1700 0 $fem-size-offset-2800 $fem-size-offset-1400;
   }
   @media screen and (min-width: $fem-breakpoint-lg) {
-    margin: 102px 0 103px 165px;
+    margin: $fem-size-offset-2500 0 $fem-size-offset-2600 $fem-size-offset-2900;
   }
 
   &__picture {
@@ -23,7 +23,7 @@
       opacity: 1;
     }
     @media screen and (min-width: $fem-breakpoint-lg) {
-      margin-top: 28px;
+      margin-top: $fem-size-offset-900;
       left: 38.333%;
       top: auto;
     }

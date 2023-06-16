@@ -3,19 +3,19 @@
 
 .request-form {
   display: grid;
-  row-gap: 16px;
+  row-gap: $fem-size-offset-500;
 
   &:focus-within {
     box-shadow: none;
   }
 
   @media screen and (min-width: $fem-breakpoint-sm) {
-    border-radius: 2.8rem;
+    border-radius: $fem-size-offset-900;
     grid-template-columns: 1fr auto;
     row-gap: 0;
-    max-height: 5.6rem;
-    padding: 5px;
-    width: calc(73.798% - 16px);
+    max-height: $fem-size-offset-1800;
+    padding: 0.3125rem;
+    width: calc(73.798% - $fem-size-offset-500);
     background-color: var(--fem-color-background-input-default);
     color: var(--fem-color-text-input-default);
 
@@ -24,14 +24,14 @@
     }
   }
   @media screen and (min-width: $fem-breakpoint-lg) {
-    width: calc(66.917% - 16px);
+    width: calc(66.917% - $fem-size-offset-500);
   }
 
   &__input {
-    border-radius: 2.8rem;
+    border-radius: $fem-size-offset-900;
     font-weight: 700;
     outline: 0;
-    padding: 9px 32px;
+    padding: $fem-size-offset-300 $fem-size-offset-1200;
     background-color: var(--fem-color-background-input-default);
     color: var(--fem-color-text-input-default);
 
@@ -55,7 +55,7 @@
   &__helper-text {
     display: none;
     font-weight: 700;
-    margin: -12px 32px 0;
+    margin: -$fem-size-offset-400 $fem-size-offset-1200 0;
     text-align: start;
 
     @extend %fem-text-body-100;
@@ -63,7 +63,7 @@
     @media screen and (min-width: $fem-breakpoint-sm) {
       grid-row-start: 2;
       grid-column: 1 / span 2;
-      margin-top: 12px;
+      margin-top: $fem-size-offset-400;
     }
 
     &--visible {
@@ -76,11 +76,11 @@
   }
 
   &__button {
-    border-radius: 2.8rem;
+    border-radius: $fem-size-offset-900;
     cursor: pointer;
     font-weight: 700;
     outline: 0;
-    padding: 9px 32px;
+    padding: $fem-size-offset-300 $fem-size-offset-1200;
     background-color: var(--fem-color-background-button-rest);
     color: var(--fem-color-text-button-rest);
 

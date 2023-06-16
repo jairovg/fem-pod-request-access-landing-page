@@ -4,12 +4,12 @@
   display: grid;
   grid-template-columns: repeat(4, auto);
   grid-row-start: 1;
-  column-gap: 16px;
+  column-gap: $fem-size-offset-500;
   font-size: 0;
 
   @media screen and (min-width: $fem-breakpoint-sm) {
     grid-row-start: auto;
-    column-gap: 27px;
+    column-gap: $fem-size-offset-800;
     width: 88.889%;
   }
 

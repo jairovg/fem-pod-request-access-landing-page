@@ -2,10 +2,10 @@
 
 .icon {
   display: grid;
-  height: 17px;
+  height: $fem-size-offset-600;
 
   @media screen and (min-width: $fem-breakpoint-sm) {
-    height: 29px;
+    height: $fem-size-offset-1000;
   }
 
   &::after {

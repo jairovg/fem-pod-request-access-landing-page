@@ -2,39 +2,39 @@
 @use "@fem-pra/tokens/dist/scss/tokens" as *;
 
 .main {
-  padding: 0 24px;
+  padding: 0 $fem-size-offset-700;
 
   @media screen and (min-width: $fem-breakpoint-sm) {
     position: relative;
     background-color: var(--fem-color-background-primary);
-    margin-left: 39px;
-    padding: 93px 32px 32px 0;
+    margin-left: $fem-size-offset-1400;
+    padding: $fem-size-offset-2400 $fem-size-offset-1200 $fem-size-offset-1200 0;
     width: 82.682%;
 
     &::after {
       position: absolute;
       background-image: url("@/assets/icons/bg-pattern-dots.svg");
       content: "";
-      height: 104px;
-      width: 232px;
-      bottom: -257px;
+      height: $fem-size-offset-2700;
+      width: $fem-size-offset-3000;
+      bottom: -$fem-size-offset-3100;
     }
   }
   @media screen and (min-width: $fem-breakpoint-lg) {
     position: static;
-    margin-left: 165px;
-    padding: 88px 58px 32px 0;
+    margin-left: $fem-size-offset-2900;
+    padding: $fem-size-offset-2300 $fem-size-offset-2000 $fem-size-offset-1200 0;
     width: 50.208%;
 
     &::after {
       bottom: 0;
       right: 0;
-      top: 718px;
+      top: $fem-size-offset-3200;
     }
   }
 
   &__title {
-    margin-bottom: 16px;
+    margin-bottom: $fem-size-offset-500;
     text-transform: uppercase;
 
     @extend %fem-text-heading-sans-500;
@@ -42,12 +42,12 @@
     @media screen and (min-width: $fem-breakpoint-sm) {
       font-size: $fem-text-heading-sans-600-size;
       line-height: $fem-text-heading-sans-600-height;
-      margin-bottom: 31px;
+      margin-bottom: $fem-size-offset-1100;
     }
     @media screen and (min-width: $fem-breakpoint-lg) {
       font-size: $fem-text-heading-sans-700-size;
       line-height: $fem-text-heading-sans-700-height;
-      margin-bottom: 24px;
+      margin-bottom: $fem-size-offset-700;
     }
 
     &--accent {
@@ -56,10 +56,10 @@
   }
 
   &__body {
-    margin-bottom: 33px;
+    margin-bottom: $fem-size-offset-1300;
 
     @media screen and (min-width: $fem-breakpoint-sm) {
-      margin-bottom: 40px;
+      margin-bottom: $fem-size-offset-1500;
       width: 73.798%
     }
     @media screen and (min-width: $fem-breakpoint-lg) {
@@ -69,10 +69,10 @@
 
   &__footer {
     display: grid;
-    row-gap: 48px;
+    row-gap: $fem-size-offset-1600;
 
     @media screen and (min-width: $fem-breakpoint-sm) {
-      row-gap: 64px;
+      row-gap: $fem-size-offset-2200;
     }
   }
 }
