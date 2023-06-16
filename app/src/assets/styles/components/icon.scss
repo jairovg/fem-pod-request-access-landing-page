@@ -1,8 +1,10 @@
+@use "@fem-pra/tokens/dist/scss/tokens" as *;
+
 .icon {
   display: grid;
   height: 17px;
 
-  @media screen and (min-width: 48em) {
+  @media screen and (min-width: $fem-breakpoint-sm) {
     height: 29px;
   }
 

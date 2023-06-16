@@ -8,7 +8,7 @@ body {
 
   @extend %fem-text-body-300;
 
-  @media screen and (min-width: 48em) {
+  @media screen and (min-width: $fem-breakpoint-sm) {
     font-size: $fem-text-body-400-size;
     line-height: $fem-text-body-400-height;
     text-align: start;

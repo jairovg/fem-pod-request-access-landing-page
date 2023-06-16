@@ -4,7 +4,7 @@
 .main {
   padding: 0 24px;
 
-  @media screen and (min-width: 48em) {
+  @media screen and (min-width: $fem-breakpoint-sm) {
     position: relative;
     background-color: var(--fem-color-background-primary);
     margin-left: 39px;
@@ -20,7 +20,7 @@
       bottom: -257px;
     }
   }
-  @media screen and (min-width: 90em) {
+  @media screen and (min-width: $fem-breakpoint-lg) {
     position: static;
     margin-left: 165px;
     padding: 88px 58px 32px 0;
@@ -39,12 +39,12 @@
 
     @extend %fem-text-heading-sans-500;
 
-    @media screen and (min-width: 48em) {
+    @media screen and (min-width: $fem-breakpoint-sm) {
       font-size: $fem-text-heading-sans-600-size;
       line-height: $fem-text-heading-sans-600-height;
       margin-bottom: 31px;
     }
-    @media screen and (min-width: 90em) {
+    @media screen and (min-width: $fem-breakpoint-lg) {
       font-size: $fem-text-heading-sans-700-size;
       line-height: $fem-text-heading-sans-700-height;
       margin-bottom: 24px;
@@ -58,11 +58,11 @@
   &__body {
     margin-bottom: 33px;
 
-    @media screen and (min-width: 48em) {
+    @media screen and (min-width: $fem-breakpoint-sm) {
       margin-bottom: 40px;
       width: 73.798%
     }
-    @media screen and (min-width: 90em) {
+    @media screen and (min-width: $fem-breakpoint-lg) {
       width: 66.917%
     }
   }
@@ -71,7 +71,7 @@
     display: grid;
     row-gap: 48px;
 
-    @media screen and (min-width: 48em) {
+    @media screen and (min-width: $fem-breakpoint-sm) {
       row-gap: 64px;
     }
   }
