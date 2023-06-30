@@ -54,13 +54,21 @@
           id="email"
           type="email"
           name="email"
-          required="required"
           class="request-form__input"
           placeholder="Email address"
+          required="required"
+          aria-required="true"
+          aria-labelledby="request-button"
+          aria-describedby="request-email-messsage"
         />
-        <span class="request-form__helper-text request-form__helper-text--error">
+        <span
+          id="request-email-messsage"
+          class="request-form__helper-text request-form__helper-text--error"
+          aria-live="assertive"
+        >
         </span>
         <button
+          id="request-button"
           type="submit"
           class="request-form__button"
         >

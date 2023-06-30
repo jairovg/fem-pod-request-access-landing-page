@@ -3,6 +3,7 @@ const submitForm = (evt) => {
 
   const { validity: { valid, valueMissing, typeMismatch } } = email;
   if (!valid) {
+    email.ariaInvalid = true;
     message.classList.add('request-form__helper-text--visible');
 
     let errorMessage = '';
@@ -14,6 +15,7 @@ const submitForm = (evt) => {
 
     message.innerText = errorMessage;
   } else {
+    email.ariaInvalid = undefined;
     message.classList.remove('request-form__helper-text--visible');
     message.innerText = '';
   }
