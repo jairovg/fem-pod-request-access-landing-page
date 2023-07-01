@@ -1,9 +1,9 @@
-const submitForm = (evt) => {
+const submitForm = (evt: Event) => {
   evt.preventDefault();
 
   const { validity: { valid, valueMissing, typeMismatch } } = email;
   if (!valid) {
-    email.ariaInvalid = true;
+    email.ariaInvalid = 'true';
     message.classList.add('request-form__helper-text--visible');
 
     let errorMessage = '';
@@ -21,7 +21,7 @@ const submitForm = (evt) => {
   }
 }
 
-const form = document.querySelector('.request-form');
-const email = document.querySelector('#email');
-const message = document.querySelector('.request-form__helper-text');
+const form: HTMLFormElement = document.querySelector('.request-form');
+const email: HTMLInputElement = document.querySelector('#email');
+const message: HTMLElement = document.querySelector('.request-form__helper-text');
 form.addEventListener('submit', submitForm);
