@@ -1,6 +1,17 @@
 {
-  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
-  "packages": ["packages/*", "app"],
-  "useNx": true,
-  "version": "0.0.0"
+  "extends": "nx/presets/npm.json",
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
+    }
+  },
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"]
+    }
+  }
 }

@@ -1,4 +1,4 @@
-@use "@fem-pra/tokens/dist/scss/tokens" as *;
+@use '@fem-pra/tokens/dist/scss/tokens' as *;
 
 .icon {
   display: grid;
@@ -10,25 +10,25 @@
 
   &::after {
     display: block;
-    content: "";
+    content: '';
     height: inherit;
     grid-area: 1/-1;
     mask: no-repeat center/contain;
   }
 
   &--spotify::after {
-    mask-image: url("@/assets/icons/spotify.svg");
+    mask-image: url('@/assets/icons/spotify.svg');
   }
 
   &--apple::after {
-    mask-image: url("@/assets/icons/apple-podcast.svg");
+    mask-image: url('@/assets/icons/apple-podcast.svg');
   }
 
   &--google::after {
-    mask-image: url("@/assets/icons/google-podcasts.svg");
+    mask-image: url('@/assets/icons/google-podcasts.svg');
   }
 
   &--pocket::after {
-    mask-image: url("@/assets/icons/pocket-casts.svg");
+    mask-image: url('@/assets/icons/pocket-casts.svg');
   }
 }

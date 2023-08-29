@@ -1,4 +1,4 @@
-@use "@fem-pra/tokens/dist/scss/tokens" as *;
+@use '@fem-pra/tokens/dist/scss/tokens' as *;
 
 .header {
   margin: $fem-size-offset-2100 0 $fem-size-offset-1900;
@@ -15,7 +15,7 @@
     left: 0;
     right: 0;
     top: 0;
-    opacity: .1;
+    opacity: 0.1;
     z-index: -1;
 
     @media screen and (min-width: $fem-breakpoint-sm) {

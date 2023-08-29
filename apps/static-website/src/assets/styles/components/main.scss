@@ -1,5 +1,5 @@
-@use "@fem-pra/tokens/dist/scss/mixins" as *;
-@use "@fem-pra/tokens/dist/scss/tokens" as *;
+@use '@fem-pra/tokens/dist/scss/mixins' as *;
+@use '@fem-pra/tokens/dist/scss/tokens' as *;
 
 .main {
   padding: 0 $fem-size-offset-700;
@@ -13,8 +13,8 @@
 
     &::after {
       position: absolute;
-      background-image: url("@/assets/icons/bg-pattern-dots.svg");
-      content: "";
+      background-image: url('@/assets/icons/bg-pattern-dots.svg');
+      content: '';
       height: $fem-size-offset-2700;
       width: $fem-size-offset-3000;
       bottom: -$fem-size-offset-3100;
@@ -60,10 +60,10 @@
 
     @media screen and (min-width: $fem-breakpoint-sm) {
       margin-bottom: $fem-size-offset-1500;
-      width: 73.798%
+      width: 73.798%;
     }
     @media screen and (min-width: $fem-breakpoint-lg) {
-      width: 66.917%
+      width: 66.917%;
     }
   }
 
