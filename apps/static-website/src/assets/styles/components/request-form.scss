@@ -10,10 +10,10 @@
   }
 
   @media screen and (min-width: $fem-breakpoint-sm) {
-    border-radius: $fem-size-offset-900;
+    border-radius: $fem-size-offset-600 + $fem-size-offset-300;
     grid-template-columns: 1fr auto;
     row-gap: 0;
-    max-height: $fem-size-offset-1800;
+    max-height: $fem-size-offset-400 * 7;
     padding: 0.3125rem;
     width: calc(73.798% - $fem-size-offset-500);
     background-color: var(--fem-color-background-input-default);
@@ -28,10 +28,11 @@
   }
 
   &__input {
-    border-radius: $fem-size-offset-900;
+    border-radius: $fem-size-offset-600 + $fem-size-offset-300;
     font-weight: 700;
     outline: 0;
-    padding: $fem-size-offset-300 $fem-size-offset-1200;
+    padding: ($fem-size-offset-400 + $fem-size-offset-100)
+      ($fem-size-offset-500 * 2);
     background-color: var(--fem-color-background-input-default);
     color: var(--fem-color-text-input-default);
 
@@ -55,7 +56,7 @@
   &__helper-text {
     display: none;
     font-weight: 700;
-    margin: -$fem-size-offset-400 $fem-size-offset-1200 0;
+    margin: -($fem-size-offset-300 * 3) ($fem-size-offset-500 * 2) 0;
     text-align: start;
 
     @extend %fem-text-body-100;
@@ -63,7 +64,7 @@
     @media screen and (min-width: $fem-breakpoint-sm) {
       grid-row-start: 2;
       grid-column: 1 / span 2;
-      margin-top: $fem-size-offset-400;
+      margin-top: $fem-size-offset-300 * 3;
     }
 
     &--visible {
@@ -76,11 +77,12 @@
   }
 
   &__button {
-    border-radius: $fem-size-offset-900;
+    border-radius: $fem-size-offset-600 + $fem-size-offset-300;
     cursor: pointer;
     font-weight: 700;
     outline: 0;
-    padding: $fem-size-offset-300 $fem-size-offset-1200;
+    padding: ($fem-size-offset-400 + $fem-size-offset-100)
+      ($fem-size-offset-500 * 2);
     background-color: var(--fem-color-background-button-rest);
     color: var(--fem-color-text-button-rest);
 

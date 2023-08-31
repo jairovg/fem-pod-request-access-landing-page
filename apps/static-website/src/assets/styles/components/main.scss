@@ -2,34 +2,38 @@
 @use '@fem-pra/tokens/dist/scss/tokens' as *;
 
 .main {
-  padding: 0 $fem-size-offset-700;
+  padding: 0 ($fem-size-offset-400 * 3);
 
   @media screen and (min-width: $fem-breakpoint-sm) {
     position: relative;
     background-color: var(--fem-color-background-primary);
-    margin-left: $fem-size-offset-1400;
-    padding: $fem-size-offset-2400 $fem-size-offset-1200 $fem-size-offset-1200 0;
+    margin-left: $fem-size-offset-700 + $fem-size-offset-400;
+    padding: (($fem-size-offset-700 * 3) - $fem-size-offset-300)
+      ($fem-size-offset-500 * 2) ($fem-size-offset-500 * 2) 0;
     width: 82.682%;
 
     &::after {
       position: absolute;
       background-image: url('@/assets/icons/bg-pattern-dots.svg');
       content: '';
-      height: $fem-size-offset-2700;
-      width: $fem-size-offset-3000;
-      bottom: -$fem-size-offset-3100;
+      height: ($fem-size-offset-700 * 3) + $fem-size-offset-400;
+      width: $fem-size-offset-400 * 29;
+      bottom: -($fem-size-offset-500 * 16);
     }
   }
   @media screen and (min-width: $fem-breakpoint-lg) {
     position: static;
-    margin-left: $fem-size-offset-2900;
-    padding: $fem-size-offset-2300 $fem-size-offset-2000 $fem-size-offset-1200 0;
+    margin-left: ($fem-size-offset-700 * 5) + $fem-size-offset-300;
+    padding: (($fem-size-offset-600 * 3) + $fem-size-offset-500)
+      (($fem-size-offset-400 * 7) + $fem-size-offset-200)
+      ($fem-size-offset-500 * 2) 0;
     width: 50.208%;
 
     &::after {
       bottom: 0;
       right: 0;
-      top: $fem-size-offset-3200;
+      top: ($fem-size-offset-700 * 22) +
+        ($fem-size-offset-500 - $fem-size-offset-200);
     }
   }
 
@@ -42,12 +46,12 @@
     @media screen and (min-width: $fem-breakpoint-sm) {
       font-size: $fem-text-heading-sans-600-size;
       line-height: $fem-text-heading-sans-600-height;
-      margin-bottom: $fem-size-offset-1100;
+      margin-bottom: $fem-size-offset-500 * 2;
     }
     @media screen and (min-width: $fem-breakpoint-lg) {
       font-size: $fem-text-heading-sans-700-size;
       line-height: $fem-text-heading-sans-700-height;
-      margin-bottom: $fem-size-offset-700;
+      margin-bottom: $fem-size-offset-400 * 3;
     }
 
     &--accent {
@@ -56,10 +60,10 @@
   }
 
   &__body {
-    margin-bottom: $fem-size-offset-1300;
+    margin-bottom: $fem-size-offset-500 * 2;
 
     @media screen and (min-width: $fem-breakpoint-sm) {
-      margin-bottom: $fem-size-offset-1500;
+      margin-bottom: $fem-size-offset-700 + $fem-size-offset-400;
       width: 73.798%;
     }
     @media screen and (min-width: $fem-breakpoint-lg) {
@@ -69,10 +73,10 @@
 
   &__footer {
     display: grid;
-    row-gap: $fem-size-offset-1600;
+    row-gap: $fem-size-offset-600 * 2;
 
     @media screen and (min-width: $fem-breakpoint-sm) {
-      row-gap: $fem-size-offset-2200;
+      row-gap: $fem-size-offset-700 * 2;
     }
   }
 }

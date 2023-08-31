@@ -9,7 +9,7 @@
 
   @media screen and (min-width: $fem-breakpoint-sm) {
     grid-row-start: auto;
-    column-gap: $fem-size-offset-800;
+    column-gap: $fem-size-offset-600 + $fem-size-offset-300;
     width: 88.889%;
   }
 
